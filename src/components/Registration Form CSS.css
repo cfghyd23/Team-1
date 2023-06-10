@@ -1,0 +1,92 @@
+body
+{
+  margin :0;
+  padding: 0;
+  background:linear-gradient(white,#e2d1d1);
+  background-attachment: fixed;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.loginbox
+{
+  width: 440px;
+  height: 540px;
+  background-color: #e9e2e2;
+  color: #fff;
+  top: 54%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border: 2px white;
+  padding: 55px 20px;
+}
+
+.avatar
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px white;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+h1
+{
+  margin: 0;
+  padding: 0 0 10px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.loginbox p
+{
+  margin: -1px;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+.loginbox input
+{
+  width: 100%
+}
+
+
+
+.loginbox input[type="text"], input[type="date"], input[type="email"], input[type="tel"]
+{
+  border: none;
+  border-bottom: 1px rgb(235, 232, 232) solid;
+  background: transparent;
+  outline: none;
+  height: 25px;
+  color: white;
+  font-size: 16px;
+}
+
+.loginbox button
+{
+    margin-top: 18px;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(237, 229, 229);
+  background: transparent;
+  color: white;
+  height: 30px;
+  font-size: 18px;
+  transition: 0.6s ease-out;
+}
+
+
+.loginbox button:hover
+{
+
+  cursor: pointer;
+  background: rgb(92, 205, 175);
+  color: black;
+}
