@@ -75,7 +75,8 @@ li {
 
 .container {
   max-width: 120rem;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 64.5rem;
 }
 
 .grid {
@@ -103,6 +104,7 @@ li {
       font-weight: 600;
       margin-bottom: 6rem;
       text-transform: capitalize;
+      font-family: 'Arial', sans-serif;
     }
 
     input, textarea{

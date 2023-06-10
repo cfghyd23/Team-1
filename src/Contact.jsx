@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <Wrapper>
-      <h2 className="common-heading">Feel Free to Donate </h2>
+      <h2 className="common-heading" >Feel Free to Donate </h2>
 
       
 
@@ -55,7 +55,7 @@ const Contact = () => {
             />
 
             <input
-              type="email"
+              type="text"
               name="Email"
               placeholder="Email"
               autoComplete="off"

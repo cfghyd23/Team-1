@@ -10,6 +10,7 @@ import { GlobalStyle } from "./GlobalStyle";
 import Error from "./Error";
 import GoToTop from "./components/GoToTop";
 import Login from "./components/Login";
+import Register from "./components/Register";
 
 const App = () => {
   const theme = {
@@ -44,6 +45,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<Error />} />
         </Routes>

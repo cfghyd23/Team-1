@@ -1,30 +1,34 @@
 import React from 'react';
 import './Registration Form CSS.css'
   
-const MultipleInputs = () => {
+const Login = () => {
   
     return(
         <body>
   <form>
-    <div class="loginbox">
-    
 
-    <h1>Login Here</h1>
+  <h1>Login Here</h1>
+    <div class="container">
     
     
     <p>User Name</p>
     <input type="text" name="" placeholder="Enter UserName" required/>
     <br></br>
     <p>Email ID</p>
-    <input type="email" name="" placeholder="Enter Email ID" />
+    <input type= "text" name="" placeholder="Enter Email ID" />
     <br></br>
     <p>Password</p>
+
     <input type="text" name="" placeholder="Enter Password" required/>
     <br></br>
-    <button type="submit">Login</button>
-    </div> 
+
+    <button type="submit" className='logins'>Login</button>
+   
+   </div>
       </form>
     </body>
     )
   }
-  export default MultipleInputs
+  export default Login;
+
+   
