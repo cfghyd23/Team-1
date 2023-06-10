@@ -14,7 +14,7 @@ const Input = ({
   return (
     <div className={`${className}`}>
         <label for={name} className="block text-sm font-medium text-gray-800">{label}</label>
-        <input type={type} id={name} className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ${inputClassName}`} placeholder={placeholder} required={isRequired} value={value} onChange={onChange} />
+        <input type={type} id={name} className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 ${inputClassName}`} placeholder={placeholder} required={isRequired} value={value} onChange={onChange} />
     </div>
   )
 }
