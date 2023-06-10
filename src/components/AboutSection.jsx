@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Button } from "../styles/Button";
 import { useGlobalContext } from "../context";
 
-const HeroSection = () => {
+const AboutSection = () => {
   const { name, image } = useGlobalContext();
 
   return (
@@ -29,7 +29,7 @@ const HeroSection = () => {
         {/* for image  */}
         <div className="section-hero-image">
           <picture>
-            <img src= "./images/imageso.jpg" alt="hero image" className="hero-img " />
+            <img src= "./images/png.jpg" alt="hero image" className="hero-img " />
           </picture>
         </div>
       </div>
@@ -89,4 +89,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default HeroSection;
+export default AboutSection;

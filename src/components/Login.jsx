@@ -13,7 +13,7 @@ const MultipleInputs = () => {
     
     
     <p>User Name</p>
-    <input type="text" name="" placeholder="Enter Username" required/>
+    <input type="text" name="" placeholder="Enter UserName" required/>
     <br></br>
     <p>Email ID</p>
     <input type="email" name="" placeholder="Enter Email ID" />
