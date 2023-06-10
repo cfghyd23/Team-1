@@ -2,5 +2,4 @@
 .env
 /controllers
 /middleware
-/routes
 constants.js

@@ -1,0 +1,9 @@
+const express = require("express");
+const router = express.Router();
+
+const {getUserDetails, updateYoungUser, deleteYoungUser} = require("../controllers/young");
+
+router.route("/").get(getUserDetails);   
+router.route("/:id").put(updateYoungUser).delete(deleteYoungUser);
+
+module.exports = router;
