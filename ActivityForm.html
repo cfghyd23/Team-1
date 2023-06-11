@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activity Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #4caf72;
+      padding: 20px;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .form-container .form-group label {
+      font-weight: bold;
+    }
+
+    .form-container .form-group .form-control {
+      border-color: #ced4da;
+    }
+
+    .form-container .form-group .form-control:focus {
+      box-shadow: none;
+      border-color: #80bdff;
+    }
+
+    .form-container .form-group .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .form-container .form-group .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="form-container">
+          <h2>Activity Form</h2>
+          <form id="contact-form" onsubmit="submitForm(event)">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input type="text" class="form-control" id="contact" required>
+            </div>
+            <div class="form-group">
+              <label for="homelocation">HomeLocation:</label>
+             <input type="text" class="form-control" id="contact" required>
+            </div>
+            <div class="form-group">
+              <label for="learnings">Learnings:</label>
+              <textarea class="form-control" id="details" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="feelings">Feelings:</label>
+              <textarea class="form-control" id="details" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="talks">Talks:</label>
+              <textarea class="form-control" id="details" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="details">Details:</label>
+              <textarea class="form-control" id="details" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div id="message-container" class="message-container"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

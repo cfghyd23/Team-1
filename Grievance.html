@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grievance Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #4caf72;
+      padding: 20px;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .form-container .form-group label {
+      font-weight: bold;
+    }
+
+    .form-container .form-group .form-control {
+      border-color: #ced4da;
+    }
+
+    .form-container .form-group .form-control:focus {
+      box-shadow: none;
+      border-color: #80bdff;
+    }
+
+    .form-container .form-group .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .form-container .form-group .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+
+    .message-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="form-container">
+          <h2>Grievance Form</h2>
+          <form id="contact-form" onsubmit="submitForm(event)">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact">Contact:</label>
+              <input type="text" class="form-control" id="contact" required>
+            </div>
+            <div class="form-group">
+              <label for="issue">Issue:</label>
+              <textarea class="form-control" id="issue" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="urgency">Urgency:</label>
+              <select class="form-control" id="urgency" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="details">Details:</label>
+              <textarea class="form-control" id="details" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div id="message-container" class="message-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      
+      var name = document.getElementById('name').value;
+      var contact = document.getElementById('contact').value;
+      var issue = document.getElementById('issue').value;
+      var urgency = document.getElementById('urgency').value;
+      var details = document.getElementById('details').value;
+
+      var messageContainer = document.getElementById('message-container');
+      messageContainer.innerHTML = `
+        <div class="alert alert-success" role="alert">
+          Thank you for filling the form.We will reach out soon!
+        </div>
+      `;
+
+      document.getElementById('name').value = '';
+      document.getElementById('contact').value = '';
+      document.getElementById('issue').value = '';
+      document.getElementById('urgency').value = 'low';
+      document.getElementById('details').value = '';
+    }
+  </script>
+</body>
+</html>
