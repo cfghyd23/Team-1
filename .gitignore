@@ -1,5 +1,4 @@
 /node_modules
 .env
-/controllers
-/middleware
-constants.js
+/routes
+/models
